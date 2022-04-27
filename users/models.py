@@ -9,7 +9,7 @@ class User(AbstractUser):
 
 class ImageUpload(models.Model):
 	title = models.CharField(max_length=100, null=True)
-	photo = models.ImageField(blank=True, upload_to=f"", null=True)
+	photo = models.ImageField(blank=True, upload_to=f"minwook", null=True)
 
 	def __str__(self):
 		return self.title
